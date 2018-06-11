@@ -42,11 +42,11 @@ class Application extends Container
     /**
      * Registers the autoloader and necessary components.
      *
-     * @param string      $name    Name for this application.
-     * @param string|null $version Version number for this application.
-     * @param array       $values
+     * @param string $name Name for this application.
+     * @param string $version Version number for this application.
+     * @param array  $values
      */
-    public function __construct($name, $version = null, array $values = array())
+    public function __construct($name, $version, array $values = array())
     {
         parent::__construct($values);
 

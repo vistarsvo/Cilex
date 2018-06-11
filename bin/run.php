@@ -5,7 +5,7 @@ if (!$loader = include __DIR__ . '/../vendor/autoload.php') {
     die('You must set up the project dependencies.');
 }
 
-$app = new \Cilex\Application('Cilex');
+$app = new \Cilex\Application('Cilex', 1);
 $app->command(new \Cilex\Command\GreetCommand());
 $app->command(new \Cilex\Command\DemoInfoCommand());
 $app->command('foo', function ($input, $output) {
